@@ -1,0 +1,86 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+<!-- @meta -->
+<meta name="description" content="Home page" >
+<!-- @@meta -->
+
+<!-- @content -->
+<main>
+  <section>
+    <div class="slides slowFade">
+        <div class="slide">
+            <img src="/assets/img/i1.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+           <img src="/assets/img/i2.jpg" alt="img"/>
+        </div>
+        <div class="slide">
+             <img src="/assets/img/i3.jpg" alt="img"/>
+        </div>
+       
+    </div>
+  </section>
+  <section class="">
+    <div class="c-box--1 c-box">
+      <h2>Box1</h2>
+      <div class="c-box--mini">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="c-box--2 c-box">
+      <h2>Box2</h2>
+      <div class="c-box--mini">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="c-box--3 c-box">
+      <h2>Box3</h2>
+      <div class="c-box--mini">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </section>
+  <section class="">
+    <div class="c-box--4 c-box">
+      <h2>Box4</h2>
+      <div class="c-box--mini">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- @@content -->
+
+<!-- @script -->
+<script>
+window.addEventListener('scroll',scrollFade);
+ function scrollFade(){
+  var box = document.querySelectorAll('.c-box');
+  for(let i = 0; i< box.length; i++){
+    let windowHeight = window.innerHeight;
+    let boxTop = box[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+    if(boxTop < windowHeight -revealpoint){
+      box[i].classList.add('active');
+    }else{
+        box[i].classList.remove('active');
+    }
+  }
+ }
+
+
+
+</script>
+<!-- @@script -->
