@@ -1,10 +1,4 @@
-.c-box {
-    width: 100%;
-    padding: 100px;
-    text-align: center;
-    background-color: #ededed;
-    height: 50vh;
-    position: relative;
+.c-scrollBox {
     transform: translateY(150px);
     opacity: 0;
     transition: all 2s ease;
@@ -14,35 +8,4 @@
         opacity: 1;
     }
 
-    h2 {
-        margin-bottom: 30px;
-    }
-
-    .c-box--mini {
-        display: flex;
-
-        & > * {
-            text-align: center;
-            line-height: 33vh;
-            font-size: 50px;
-            color: #ededed;
-            width: 33%;
-            height: 33vh;
-        }
-
-        div:first-of-type {
-            background-color: rebeccapurple;
-       
-        }
-
-        div:nth-of-type(2) {
-            background-color: green;
-        
-        }
-
-        div:nth-of-type(3) {
-            background-color: blue;
-        
-        }
-    }
 }

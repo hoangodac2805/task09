@@ -1,0 +1,152 @@
+.c-interview {
+    margin-top: 92px;
+
+    .c-interview--main {
+        .c-title,
+        .c-cap {
+            text-align: center;
+        }
+
+        .c-title {
+            margin-bottom: 5px;
+        }
+
+        .c-cap {
+            line-height: 1.73;
+        }
+    }
+
+    .c-interview--header {
+        max-width: 960px;
+        margin: 50px auto 0;
+    }
+
+    .c-interview--body {
+        margin-top: 142px;
+        background-color: $cl-blue--1;
+
+        padding: 93px 30px 69px;
+        color: $cl-white--1;
+
+        .c-interview__exBox {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .c-title {
+            text-align: left;
+            margin-bottom: 37px;
+        }
+
+        h4.c-title {
+            letter-spacing: 0.58px;
+            line-height: 1.93;
+            margin-bottom: 22px;
+        }
+    }
+
+    .c-interview--bodyM {
+        display: flex;
+        margin-bottom: 22px;
+    }
+
+    .c-interview--bodyL {
+        width: 66%;
+    }
+
+    .c-interview--bodyL {
+        .c-cap {
+            text-align: left;
+            color: $cl-white--1;
+            font-weight: 500;
+            letter-spacing: 0.58px;
+            margin-bottom: 26px;
+        }
+
+        .c-interview__desc {
+            letter-spacing: 0.38px;
+            font-weight: 300;
+            line-height: 1.73;
+            margin-bottom: 29px;
+        }
+    }
+
+    .c-interview--bodyR {
+        padding-top: 4px;
+        padding-left: 47px;
+    }
+
+    .c-interview__sign {
+        font-size: 2.2rem;
+        letter-spacing: 0.53px;
+        font-weight: 500;
+    }
+
+    .c-interview__company {
+        margin-top: 47px;
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 2.52px;
+    }
+
+    .c-interview--footer {
+        padding: 43px 30px 50px 40px;
+        display: flex;
+    }
+
+    .c-interview__logo {
+        width: 308px;
+        height: 116px;
+        background-color: $cl-white--1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+
+        img {
+            transform: translate(-5px, 1px);
+        }
+    }
+
+    .c-interview--hastag {
+        width: calc(100% - 308px - 50px);
+        padding-left: 17px;
+    }
+
+    .c-interview--hastag1,
+    .c-interview--hastag2,
+    .c-interview--hastag3 {
+        display: flex;
+        margin-bottom: 24px;
+    }
+
+    .c-interview--hastag1 {
+    }
+
+    .c-interview--hastagTxt1,
+    .c-interview--hastagTxt2 {
+        font-size: 2.4rem;
+        letter-spacing: 0.58px;
+        line-height: 0.9;
+    }
+
+    .c-interview--hastagTxt1 {
+        width: 26%;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 62px;
+            height: 1px;
+            content: "";
+            background-color: $cl-white--1;
+            right: -9%;
+            top: 57%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .c-interview--hastagTxt2 {
+        transform: translateY(2px);
+    }
+}

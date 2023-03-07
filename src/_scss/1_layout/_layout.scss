@@ -2,22 +2,33 @@
 ------------------------------------------------------------*/
 body {
     font-family: $main-fonts;
-    font-size: 1.4rem;
-    min-width: $base-width;
+    font-size: 1.6rem;
+   
+    background-color: $cl-white--1;
+    color: $cl-white--1;
     line-height: 1.5;
     @include sp {
         min-width: 320px;
     }
 }
 //-------------------------------------------------------
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 main {
-    // padding: 0px 0 100px;
+  
 }
 
-section {
-    padding: 50px 0 90px;
-}
 
+
+.l-container {
+    max-width: $base-width;
+    margin: 0 auto;
+}
 //-------------------------------------------------------
 
 //-------------------------------------------------------
