@@ -48,8 +48,8 @@
         }
     }
 
-    .c-title {
- 
+    .c-title1 {
+        color: #fff;
         margin-bottom: 24px;
         @include tab {
             font-size: 3rem;
@@ -181,9 +181,18 @@
             }
             @include sp {
                 margin-bottom: 29px;
+                transform: translateX(-1px);
             }
         }
-        @include sp {
+
+        &:last-of-type {
+                   
+        
+            @include sp {
+                        
+                transform: translateX(-4px);
+            }
+        }        @include sp {
             max-width: 335px;
           
             margin: 0 auto;

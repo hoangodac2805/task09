@@ -8,8 +8,9 @@
     color: $cl-orange--1;
     @include tab {
         letter-spacing: 0;
-        margin-top: 56px;
+        margin-top: 55px;
         margin-bottom: 5px;
+        letter-spacing: 0.67px;
     }
     @include sp {
         font-size: 2.2rem;
@@ -75,6 +76,9 @@
         margin-left: 21px;
         padding-right: 27px;
     }
+    @include sp {
+        padding-bottom: 34px;
+    }
 
     dt {
         font-size: 1.8rem;
@@ -106,9 +110,6 @@
         }
     }
     @include tab {
-        // width: 60.5%;
-        // transform: translateX(-20px);
-
         dt {
         }
 
@@ -117,7 +118,7 @@
         }
     }
     @include sp {
-        margin-left: 9px;
+        margin-left: 10px;
 
         dt {
             letter-spacing: 0;
@@ -179,7 +180,7 @@
     }
     @include sp {
         margin-top: 1px;
-        margin-bottom: 38px;
+        margin-bottom: 19px;
         padding-left: 17px !important;
         letter-spacing: 0.4px;
     }
@@ -293,6 +294,9 @@
         padding-left: 22px !important;
         letter-spacing: 0.34px;
         margin-bottom: 4px;
+    }
+    @include sp {
+        padding-left: 11px !important;
     }
 }
 
